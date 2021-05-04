@@ -49,7 +49,7 @@ namespace Database_Viewer
 			// loginBox
 			// 
 			this.loginBox.Location = new System.Drawing.Point(12, 12);
-			this.loginBox.Name = "loginField";
+			this.loginBox.Name = "loginBox";
 			this.loginBox.Size = new System.Drawing.Size(126, 23);
 			this.loginBox.TabIndex = 0;
 			// 
@@ -183,7 +183,7 @@ namespace Database_Viewer
 			// 
 			this.passBox.BackColor = System.Drawing.SystemColors.Window;
 			this.passBox.Location = new System.Drawing.Point(12, 72);
-			this.passBox.Name = "passwordField";
+			this.passBox.Name = "passBox";
 			this.passBox.Size = new System.Drawing.Size(126, 23);
 			this.passBox.TabIndex = 4;
 			// 
@@ -195,7 +195,7 @@ namespace Database_Viewer
 			this.Controls.Add(this.panel1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
 			this.Name = "RegisterForm";
-			this.Text = "RegisterForm";
+			this.Text = "Registration";
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
 			this.panel2.ResumeLayout(false);
