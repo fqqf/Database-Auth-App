@@ -13,15 +13,23 @@ namespace Database_Viewer
 {
 	public partial class LoginForm : Form
 	{
+		public RegisterForm registerForm;
+
 		public LoginForm()
 		{
 			InitializeComponent();
+
+			loginField.Text = "Your login";
+			loginField.ForeColor = Color.Gray;
+
+			passwordField.Text = "Your password";
+			passwordField.ForeColor = Color.Gray;
 		}
 
 		private void loginButton_Click(object sender, EventArgs e)
 		{
-			String login = loginBox.Text;
-			String password = passBox.Text;
+			String login = loginField.Text;
+			String password = passwordField.Text;
 
 			Database database = new Database();
 
@@ -37,6 +45,48 @@ namespace Database_Viewer
 			adapter.Fill(table);
 
 			if (table.Rows.Count == 1) MessageBox.Show("Auth successfully"); else MessageBox.Show("Auth failed");
+		}
+
+		private void loginBox_Enter(object sender, EventArgs e)
+		{
+			if (loginField.Text == "Your login")
+			{
+				loginField.Text = "";
+				loginField.ForeColor = Color.Black;
+			}
+		}
+
+		private void loginBox_Leave(object sender, EventArgs e)
+		{
+			if (loginField.Text == "")
+			{
+				loginField.Text = "Your login";
+				loginField.ForeColor = Color.Gray;
+			}
+		}
+
+		private void passBox_Enter(object sender, EventArgs e)
+		{
+			if (passwordField.Text == "Your password")
+			{
+				passwordField.Text = "";
+				passwordField.ForeColor = Color.Black;
+			}
+		}
+
+		private void passBox_Leave(object sender, EventArgs e)
+		{
+			if (passwordField.Text == "")
+			{
+				passwordField.Text = "Your password";
+				passwordField.ForeColor = Color.Gray;
+			}
+		}
+
+		private void label3_Click(object sender, EventArgs e)
+		{
+			this.Hide();
+			registerForm.Show();
 		}
 	}
 }
