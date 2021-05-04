@@ -88,5 +88,21 @@ namespace Database_Viewer
 			this.Hide();
 			registerForm.Show();
 		}
+
+		Point lastPoint = new Point();
+
+		private void panel1_MouseMove(object sender, MouseEventArgs e)
+		{
+			if (e.Button == MouseButtons.Left)
+			{
+				this.Left += e.X - lastPoint.X;
+				this.Top += e.Y - lastPoint.Y;
+			}
+		}
+
+		private void panel1_MouseDown(object sender, MouseEventArgs e)
+		{
+			lastPoint.X = e.X; lastPoint.Y = e.Y;
+		}
 	}
 }
