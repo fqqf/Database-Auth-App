@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsApp1", "WinFormsApp1\WinFormsApp1.csproj", "{65D7582B-AA6B-4A1C-9103-C76A43F3B5AD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database Viewer", "Database Viewer\Database Viewer.csproj", "{93C21564-43CE-40B0-A803-26E426022D99}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{65D7582B-AA6B-4A1C-9103-C76A43F3B5AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{65D7582B-AA6B-4A1C-9103-C76A43F3B5AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{65D7582B-AA6B-4A1C-9103-C76A43F3B5AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{65D7582B-AA6B-4A1C-9103-C76A43F3B5AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93C21564-43CE-40B0-A803-26E426022D99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93C21564-43CE-40B0-A803-26E426022D99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93C21564-43CE-40B0-A803-26E426022D99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93C21564-43CE-40B0-A803-26E426022D99}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {321446E3-15D3-4F02-BB83-C8DF08758DF3}
+		SolutionGuid = {03BD2912-F22B-4886-9B59-A83C2CABFDEF}
 	EndGlobalSection
 EndGlobal
